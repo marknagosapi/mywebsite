@@ -1,0 +1,78 @@
+.question {
+    display: flex;
+    background-color: rgb(28, 183, 103);
+    color:white;
+    font-family: bold;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.points, .question, .wrongAnswer, .answer {
+    text-align: center;
+}
+
+.points {
+    font-size: 2.0em;
+    color: rgb(3, 141, 84);
+    font-weight: bold;
+}
+
+.table {
+    width: 100%;
+}
+
+
+.answer {
+        color: green;
+    font-weight: bold;
+}
+
+.wrongAnswer {
+color: rgb(236, 32, 17);
+font-weight: bold;
+}
+
+
+
+.btn{
+    padding: 20px;
+    margin: 20px;
+
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(15, 164, 15);
+    color: white;
+}
+
+.btn:hover{
+
+    padding: 20px;
+    margin: 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(71, 187, 71);
+    color: white;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px;
+}
+
+.rowHR{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+}
