@@ -1,0 +1,20 @@
+[
+    {
+      "title": "Line Following Robot",
+      "imageSrc": "robot.jpeg",
+      "description": "We built the robot in a competition powered by Accenture. We worked in groups of three to complete our robot within 12 hours. 🕗",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7186277725140107264?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7186277725140107264%29"
+    },
+    {
+      "title": "Empty Bins",
+      "imageSrc": "empty_bins.jpeg",
+      "description": "How long would it take to save millions of trees  ~ 2 days, we say, that’s how long it took us to create our solution within the framework of the annual Hackathon.🌳",
+      "link": "https://www.linkedin.com/posts/n%C3%A1g%C3%B3-m%C3%A1rk_emptybins-activity-7177986677041184768-cdSc?utm_source=share&utm_medium=member_desktop"
+    },
+    {
+        "title": "Zoo Targu Mures",
+        "imageSrc": "zoo.webp",
+        "description": "We created a mobile application for the Zoo in Targu Mures. 🦁",
+        "link":"https://play.google.com/store/apps/details?id=com.zooapp&pcampaignid=web_share"
+    }
+]

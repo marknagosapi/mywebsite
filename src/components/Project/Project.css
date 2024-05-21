@@ -1,0 +1,33 @@
+.project-card {
+    position: relative;
+    width: 440px; /* Set your desired width */
+    height: 300px; /* Set your desired height */
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    color: #fff;
+    text-align: center;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+  }
+  

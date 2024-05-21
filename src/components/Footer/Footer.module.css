@@ -1,0 +1,47 @@
+.footer {
+    /* background-color: #ffffff;  */
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .social {
+    display: flex;
+  }
+  
+  .icon {
+    margin-right: 15px;
+    color: #ffffff; /* White color for icons */
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+
+  .icon:hover {
+    transform: scale(1.1);
+    font-weight: bold;
+  }
+  
+  .info p {
+    color: #ffffff; /* White color for text */
+    font-family: 'Minecraft', sans-serif; /* Use a Minecraft-like font */
+    font-size: 14px;
+  }
+
+  /* For tablets */
+@media (max-width: 768px) {
+  .footer {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .footer {
+      padding: 10px;
+  }
+}
+  

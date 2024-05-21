@@ -1,0 +1,25 @@
+/* global.css */
+
+@font-face {
+    font-family: 'Monocraft';
+    src: url('../assets/fonts/Monocraft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Monocraft', sans-serif;
+    font-size: 16px; /* Adjust the font size as needed */
+    background-color: #1abc9c; /* vibrant green color */
+    color: #ffffff; /* White color for text */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  
+  /* Additional styles to ensure content fits within the screen */
+  .container {
+    max-width: 1200px; /* Adjust maximum width as needed */
+    margin: 0 auto; /* Center content horizontally */
+  }

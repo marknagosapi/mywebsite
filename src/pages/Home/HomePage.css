@@ -1,0 +1,87 @@
+.home-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1abc9c; /* vibrant green color */
+  color: #fff;
+}
+
+@media (min-width: 1024px) {
+  .goof-around:hover > .face {
+    display: block;
+  }
+}
+
+.sliding-image {
+  position: fixed;
+  bottom: -100%;
+  width: 100px;
+  height: 100px;
+  background: url("https://preview.redd.it/all-hail-the-frog-v0-ksdxvlnkwosa1.png?auto=webp&s=daa2dc6e5e1173d61e37894aec2dbb161a055216")
+    no-repeat center;
+  background-size: cover;
+  transition: bottom 5s;
+}
+
+.sliding-image.show {
+  bottom: 6%;
+}
+
+/* ... existing styles ... */
+
+.welcome-message {
+  text-align: center;
+}
+
+.welcome-message h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+.welcome-message p {
+  font-size: 1.5rem;
+  animation: slideInFromRight 1s ease-in-out;
+}
+
+.face {
+  display: none;
+  margin-top: -3.8vh;
+  margin-left: 60%;
+  font-size: 1.5rem;
+  animation: scale 1s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

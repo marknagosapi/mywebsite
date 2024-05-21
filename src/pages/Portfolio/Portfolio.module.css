@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  filter: blur(0);
+
+  justify-content: space-around;
+}
+
+.container > div {
+  margin: 20px;
+  transition: transform 0.1s ease, filter 0.3s ease;
+}
+
+.container:hover > div {
+  filter: blur(5px);
+}
+
+.container > div:hover {
+  transform: scale(1.1);
+  filter: blur(0);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  from {
+    scale: 0.8;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+.container > div {
+  animation: scale 1s ease;
+}
