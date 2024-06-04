@@ -1,13 +1,4 @@
-#!                                                   _    
-#!                                                  | |   
-#!    _ __   __ _  __ _  ___    _ __ ___   __ _ _ __| | __
-#!   | '_ \ / _` |/ _` |/ _ \  | '_ ` _ \ / _` | '__| |/ /
-#!   | | | | (_| | (_| | (_) | | | | | | | (_| | |  |   < 
-#!   |_| |_|\__,_|\__, |\___/  |_| |_| |_|\__,_|_|  |_|\_\
-#!                 __/ |                                  
-#!                |___/                                   
-
-
+## HELLO ;D
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-blue)](https://nagomark.online) ![GitHub followers](https://img.shields.io/github/followers/marknagosapi?style=social)
 
 ## 🌟 About Me
