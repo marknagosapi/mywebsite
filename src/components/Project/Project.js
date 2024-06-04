@@ -1,11 +1,11 @@
 import React from "react";
-import "./Project.css"; // import your CSS file for styling
+import "./Project.css";
 
 const Project = ({ title, imageSrc, description, link }) => {
   const backgroundStyle = {
     backgroundImage: `url(${imageSrc})`,
-    backgroundSize: "cover", // add this line
-    backgroundPosition: "center", // add this line
+    backgroundSize: "cover",
+    backgroundPosition: "center",
   };
 
   const navigateToLink = () => {

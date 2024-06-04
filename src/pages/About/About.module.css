@@ -12,6 +12,19 @@
   animation: fade-in 1s ease;
 }
 
+.paused {
+  animation-play-state: paused;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  } /* adjust as needed */
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -26,8 +39,37 @@
 }
 
 .details {
-  font-size: 1.2em;
-  max-width: 70%;
+  list-style-type: none; /* Remove bullet points */
+  padding-left: 0; /* Remove padding */
+}
+
+.details li {
+  margin-bottom: 1em; /* Add space between lines */
+}
+
+.details li:hover > div{
+  transform: scale(1.5);
+}
+
+.details li:hover{
+  font-weight: bold;
+  transform: scale(1.4);
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1em;
+  vertical-align: middle;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 /* Responsive styles */
@@ -46,14 +88,12 @@
   left: -30%;
   animation: move-snail 50s linear infinite;
   z-index: -1;
-
 }
-
 
 @media (max-width: 600px) {
   .snail {
     height: 20%;
-    transform: scale(0.7); /* Adjust as needed */
+    transform: scale(0.7);
   }
 }
 
@@ -65,4 +105,3 @@
     left: 100%;
   }
 }
-

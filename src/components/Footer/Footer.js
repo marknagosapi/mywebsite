@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Footer.module.css";
 
 function getYear() {
@@ -15,12 +15,19 @@ function Footer() {
         <a href="https://instagram.com/marknago" className={styles.icon}>
           Instagram
         </a>
-        <a href="https://www.linkedin.com/in/n%C3%A1g%C3%B3-m%C3%A1rk/" className={styles.icon}>
+        <a
+          href="https://www.linkedin.com/in/n%C3%A1g%C3%B3-m%C3%A1rk/"
+          className={styles.icon}
+        >
           LinkedIn
         </a>
       </div>
       <div className={styles.info}>
-        <p>&copy; {getYear()} Nago Mark</p>
+        <p>
+          {" "}
+          <span className={styles.fun}>&copy; </span>
+          {getYear()} Nago Mark
+        </p>
       </div>
     </footer>
   );

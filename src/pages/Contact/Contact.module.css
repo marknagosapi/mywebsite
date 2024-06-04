@@ -1,37 +1,80 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  text-align: center;
+}
+
+.title,
+.details {
+  animation: scale-up 0.6s ease forwards;
+  transition: transform 0.3s ease;
+}
+
+.title:hover,
+.details:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(1);
   }
-  
-  .title, .details {
-    animation: scale-up 0.6s ease forwards;
-    transition: transform 0.3s ease;
-  }
-  
-  .title:hover, .details:hover {
+  100% {
     transform: scale(1.1);
   }
+}
 
-  @keyframes scale-up {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(1.1);
-    }
+.title {
+  font-size: 2em;
+}
+
+.details {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+@keyframes move {
+  0% {
+    left: 100%;
   }
-  
-  .title {
-    font-size: 2em;
+  100% {
+    left: -100%;
   }
-  
-  .details {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
+}
+
+.bottomDiv {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: move 20s linear infinite;
+}
+
+.topDiv {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  align-items: center;
+  animation: move 20s linear infinite;
+}
+@media (max-width: 480px) {
+  .topDiv {
+    display: none;
   }
 
+  .bottomDiv {
+    display: none;
+  }
+}

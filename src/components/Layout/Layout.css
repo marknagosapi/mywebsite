@@ -1,5 +1,13 @@
 .layout {
-    padding: 20px; /* Adjust the padding size as needed */
-    min-height: 80vh; /* Ensure the layout covers the full height of the screen */
+  padding: 20px; /* Adjust the padding size as needed */
+  min-height: 80vh; /* Ensure the layout covers the full height of the screen */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+@media (max-width: 70px) {
+  .layout {
+    font-size: 1.5rem;
+
+    width: 100% ;
   }
-  
+}
