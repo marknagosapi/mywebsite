@@ -11,16 +11,12 @@
   transition: transform 0.1s ease, filter 0.3s ease;
 }
 
-.container:hover > div {
+.container:has(> div:hover) > div:not(:hover) {
   filter: blur(5px);
 }
 
 .container > div:hover {
   transform: scale(1.1);
-  filter: blur(0);
-}
-
-.container:hover > div:hover {
   filter: blur(0);
 }
 

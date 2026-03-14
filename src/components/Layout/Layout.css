@@ -1,6 +1,7 @@
 .layout {
   padding: 20px; /* Adjust the padding size as needed */
-  min-height: 80vh; /* Ensure the layout covers the full height of the screen */
+  flex: 1; /* Fill available space */
+  overflow-y: auto; /* Allow scrolling only if content exceeds available space */
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 

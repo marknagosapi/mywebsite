@@ -7,16 +7,43 @@
   font-style: normal;
 }
 
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Monocraft", sans-serif;
   font-size: 16px;
-  background-color: #148021; /* vibrant green color  #1abc9c */
+  background-color: #1abc9c; 
   color: #ffffff; /* White color for text */
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  width: 100%;
+  animation: randomBG 120s infinite alternate;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@keyframes randomBG {
+  0% { background-color: #18bf6e; }
+  25% { background-color: #4ecdc4; }
+  50% { background-color: #2eb8a5; }
+  75% { background-color: #5f27cd; }
+  100% { background-color: #1dd1a1; }
 }
 
 /* Additional styles to ensure content fits within the screen */

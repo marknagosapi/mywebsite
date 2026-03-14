@@ -9,15 +9,15 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.social}>
-        <a href="https://youtube.com/@nagomark" className={styles.icon}>
+        <a href="https://youtube.com/@nagomark" className={[styles.icon, styles.youtubeIcon].join(" ")}>
           YouTube
         </a>
-        <a href="https://instagram.com/marknago" className={styles.icon}>
+        <a href="https://instagram.com/marknago" className={[styles.icon, styles.instagramIcon].join(" ")}>
           Instagram
         </a>
         <a
           href="https://www.linkedin.com/in/n%C3%A1g%C3%B3-m%C3%A1rk/"
-          className={styles.icon}
+          className={[styles.icon, styles.linkedinIcon].join(" ")}
         >
           LinkedIn
         </a>

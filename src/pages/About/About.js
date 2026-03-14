@@ -17,7 +17,7 @@ function About() {
             src={gradCap}
             className={styles.icon}
             beforeInjection={(svg) => {
-              svg.setAttribute("style", "width: 24px; height: 24px");
+              svg.setAttribute("fill", "white","color", "white");
             }}
           />
           Computer Science student in Romania.
@@ -26,9 +26,7 @@ function About() {
           <ReactSVG
             src={codeSquare}
             className={styles.icon}
-            beforeInjection={(svg) => {
-              svg.setAttribute("style", "width: 24px; height: 24px");
-            }}
+            
           />
           Currently a React Native Developer @{" "}
           <a href="https://www.3ss.tv/" className={styles.link}>
@@ -41,7 +39,7 @@ function About() {
             src={cerealBowl}
             className={styles.icon}
             beforeInjection={(svg) => {
-              svg.setAttribute("style", "width: 24px; height: 24px");
+              svg.setAttribute("fill", "white");
             }}
           />
           Eating my cereal with cold milk. {":)"}

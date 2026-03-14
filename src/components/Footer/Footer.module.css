@@ -24,13 +24,28 @@
 }
 
 .icon:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   font-weight: bold;
 }
 
 .info p {
   font-weight: bold;
   font-size: 14px;
+}
+
+.youtubeIcon:hover{
+  color: rgb(229, 38, 38);
+  background-color: '#000000';
+}
+
+.instagramIcon:hover{
+  color: rgb(206, 64, 211);
+  background-color: '#000000';
+} 
+
+.linkedinIcon:hover{
+  color: rgb(0, 123, 255);
+  background-color: '#000000';
 }
 
 @keyframes move {

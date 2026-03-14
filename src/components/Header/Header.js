@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Header.module.css";
 import AsciiArt from "../AsciiArt/index.js";
+import { Link } from "react-router-dom";
 
 function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(window.innerWidth > 768);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [joke, setJoke] = useState({
     id: 1,
@@ -19,11 +20,14 @@ function Header() {
   };
 
   useEffect(() => {
-    // Fetch joke
     const getJoke = async () => {
       await fetch("https://official-joke-api.appspot.com/random_joke")
         .then((response) => response.json())
         .then((data) => {
+          if(data.setup.length > 80 || data.punchline.length > 50){{
+            getJoke();
+            return;
+          }}
           setJoke(data);
           setIsLoading(false);
         });
@@ -60,17 +64,17 @@ function Header() {
       <div className={styles.logo}>
         {window.innerWidth < 1200 ? (
           <h1 className={styles.title}>
-            <a href="/" className={styles.link}>
+            <Link to="/home" className={styles.link}>
               Nago Mark
-            </a>
+            </Link>
           </h1>
         ) : (
-          <a href="/" className={styles.link} >
+          <Link to="/home" className={styles.link}>
             <AsciiArt />
-          </a>
+          </Link>
         )}
       </div>
-      {/* 
+
       <div className={styles.jokeContainer}>
         {isLoading ? (
           <p>Joke Incoming...</p>
@@ -80,7 +84,7 @@ function Header() {
             <p className={styles.jokePunchline}>{joke.punchline}</p>
           </div>
         )}
-      </div> */}
+      </div>
 
       <nav className={styles.menu}>
         <div
@@ -96,24 +100,24 @@ function Header() {
         {isMenuOpen && (
           <ul>
             <li>
-              <a href="/" onClick={toggleMenuIfMobile}>
+              <Link to="/home" onClick={toggleMenuIfMobile}>
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/#/about" onClick={toggleMenuIfMobile}>
+              <Link to="/about" onClick={toggleMenuIfMobile}>
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/#/portfolio" onClick={toggleMenuIfMobile}>
+              <Link to="/portfolio" onClick={toggleMenuIfMobile}>
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/#/contact" onClick={toggleMenuIfMobile}>
+              <Link to="/contact" onClick={toggleMenuIfMobile}>
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         )}

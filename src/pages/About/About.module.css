@@ -3,13 +3,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  min-height: 100%;
   text-align: center;
   padding: 0 20px;
+  contain: layout style;
 }
 
 .container > * {
   animation: fade-in 1s ease;
+  will-change: opacity;
 }
 
 .paused {
@@ -60,7 +62,14 @@
   display: inline-block;
   vertical-align: middle;
   margin-right: 1em;
-  vertical-align: middle;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.icon svg {
+ 
+  width: 24px;
+  height: 24px;
 }
 
 .link {
@@ -83,17 +92,31 @@
   }
 }
 .snail {
-  position: absolute;
+  position: fixed;
   bottom: -10%;
   left: -30%;
   animation: move-snail 50s linear infinite;
   z-index: -1;
+  will-change: left;
+  pointer-events: none;
 }
 
 @media (max-width: 600px) {
   .snail {
     height: 20%;
     transform: scale(0.7);
+    bottom: 5%;
+    left: -20%;
+    animation: move-snail-mobile 50s linear infinite;
+  }
+
+  @keyframes move-snail-mobile {
+    from {
+      left: -20%;
+    }
+    to {
+      left: 90%;
+    }
   }
 }
 

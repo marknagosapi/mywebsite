@@ -1,7 +1,7 @@
 import React from "react";
 import "./Project.css";
 
-const Project = ({ title, imageSrc, description, link }) => {
+const Project = ({ title, imageSrc, description, link, date }) => {
   const backgroundStyle = {
     backgroundImage: `url(${imageSrc})`,
     backgroundSize: "cover",
@@ -21,7 +21,10 @@ const Project = ({ title, imageSrc, description, link }) => {
       <div className="project-overlay">
         <h2 className="project-title">{title}</h2>
         <p className="project-description">{description}</p>
+
       </div>
+              <p className="project-date">{date}</p>
+
     </div>
   );
 };
