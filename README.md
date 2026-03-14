@@ -1,4 +1,4 @@
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-blue)](https://nagomark.online) ![GitHub followers](https://img.shields.io/github/followers/marknagosapi?style=social)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-blue)](https://marknagosapi.github.io/mywebsite) ![GitHub followers](https://img.shields.io/github/followers/marknagosapi?style=social)
 
 ## 🌟 About Me
 
