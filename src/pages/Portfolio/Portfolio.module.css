@@ -41,3 +41,10 @@
 .container > div {
   animation: scale 1s ease;
 }
+
+/* Remove blur effects on mobile */
+@media (max-width: 768px) {
+  .container:has(> div:hover) > div:not(:hover) {
+    filter: blur(0);
+  }
+}
