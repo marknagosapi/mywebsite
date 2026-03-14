@@ -1,4 +1,3 @@
-## HELLO ;D
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-blue)](https://nagomark.online) ![GitHub followers](https://img.shields.io/github/followers/marknagosapi?style=social)
 
 ## 🌟 About Me
