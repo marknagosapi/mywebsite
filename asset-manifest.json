@@ -1,21 +1,25 @@
 {
   "files": {
-    "main.css": "/mywebsite/static/css/main.27e18029.css",
-    "main.js": "/mywebsite/static/js/main.cfecd668.js",
+    "main.css": "/mywebsite/static/css/main.0db91dc1.css",
+    "main.js": "/mywebsite/static/js/main.6b7cd0d0.js",
+    "static/media/stackwars.png": "/mywebsite/static/media/stackwars.4e526667d05cab5e61dc.png",
     "static/media/robot.jpeg": "/mywebsite/static/media/robot.42ee9a5fda826343493b.jpeg",
+    "static/media/sapivr.png": "/mywebsite/static/media/sapivr.5a9cdefbd296de72baac.png",
+    "static/media/edumillionaire.png": "/mywebsite/static/media/edumillionaire.ba6a4eb7768e6214af47.png",
     "static/media/Monocraft.ttf": "/mywebsite/static/media/Monocraft.d2201aeb746218a4c4bb.ttf",
     "static/media/zoo.webp": "/mywebsite/static/media/zoo.f3e3d74b194da88b7ef5.webp",
     "static/media/empty_bins.jpeg": "/mywebsite/static/media/empty_bins.189f1ca2d03af2df106e.jpeg",
+    "static/media/website_ok.png": "/mywebsite/static/media/website_ok.b2c514376e752719d541.png",
     "static/media/one-tv.webp": "/mywebsite/static/media/one-tv.258c7edf41882edc3e3e.webp",
     "static/media/cb.svg": "/mywebsite/static/media/cb.1ead5d7a1587891dae31c68bfa3fcb8d.svg",
     "static/media/gd.svg": "/mywebsite/static/media/gd.84c4361969746e983b2d6a6aa9ac33dd.svg",
     "static/media/cq.svg": "/mywebsite/static/media/cq.20ce709320e11ac8bfbdad357e222761.svg",
     "index.html": "/mywebsite/index.html",
-    "main.27e18029.css.map": "/mywebsite/static/css/main.27e18029.css.map",
-    "main.cfecd668.js.map": "/mywebsite/static/js/main.cfecd668.js.map"
+    "main.0db91dc1.css.map": "/mywebsite/static/css/main.0db91dc1.css.map",
+    "main.6b7cd0d0.js.map": "/mywebsite/static/js/main.6b7cd0d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.27e18029.css",
-    "static/js/main.cfecd668.js"
+    "static/css/main.0db91dc1.css",
+    "static/js/main.6b7cd0d0.js"
   ]
 }
