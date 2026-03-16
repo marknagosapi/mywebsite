@@ -41,4 +41,14 @@
     left: 50%;
     margin:0;
   }
+
+  .website-ok-icon {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+  }
   

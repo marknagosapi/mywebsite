@@ -26,5 +26,26 @@
     "description": "I contributed to the development of the One TV VOD software, which is a streaming platform that offers a wide range of movies and TV shows.",
     "link": "https://www.one-tv.hu/",
     "date": "2026-02-01"
+  },
+  {
+    "title": "Edu Millionaire",
+    "imageSrc": "edumillionaire.png",
+    "description": "I am CO founder of Edu Millionaire, an online platform that changes the way of examaning students. We use the well known game show format, Who Wants to Be a Millionaire, to create an engaging and interactive learning experience for students.",
+    "link": "https://edumillionaire.ms.sapientia.ro/",
+    "date": "2025-09-03"
+  },
+  {
+    "title": "Stack Wars",
+    "imageSrc": "stackwars.png",
+    "description": "I am the creator of Stack Wars, an educational website to help students learn data structures and algorithms in a fun and interactive way.",
+    "link": "https://stackwars.netlify.app/",
+    "date": "2021-04-01"
+  },
+  {
+    "title": "SapiVR",
+    "imageSrc": "sapivr.png",
+    "description": "Attended a 24h Hackathon at my university. We made a 360 navigationsoftware of our university that we named \"SapiVR\".",
+    "link": null,
+    "date": "2021-04-20"
   }
 ]

@@ -16,8 +16,8 @@ function Contact() {
     <div className={styles.container}>
       {/* <div className={styles.topDiv}>{flowers}</div> */}
       <h1 className={styles.title}>Feel Free To Reach Out</h1>
-      <a href="mailto:ragmakon@gmail.com" className={styles.details}>
-        Email: ragmakon@gmail.com
+      <a href="mailto:nagomark7@gmail.com" className={styles.details}>
+        Email: nagomark7@gmail.com
       </a>
       {/* <div className={styles.bottomDiv}>{flowers}</div> */}
     </div>

@@ -6,13 +6,19 @@ import robot from "../../assets/images/robot.jpeg";
 import empty_bins from "../../assets/images/empty_bins.jpeg";
 import zoo from "../../assets/images/zoo.webp";
 import one_tv from "../../assets/images/one-tv.webp";
+import edumillionaire from "../../assets/images/edumillionaire.png";
+import stackwars from "../../assets/images/stackwars.png";
+import sapivr from "../../assets/images/sapivr.png";
 
 // Map image names to import variables
 const images = {
   "robot.jpeg": robot,
   "empty_bins.jpeg": empty_bins,
   "zoo.webp": zoo,
-  "one-tv.webp": one_tv
+  "one-tv.webp": one_tv,
+  "edumillionaire.png": edumillionaire,
+  "stackwars.png": stackwars,
+  "sapivr.png": sapivr,
 };
 
 function Portfolio() {

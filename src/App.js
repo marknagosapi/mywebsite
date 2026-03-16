@@ -7,7 +7,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Contact from "./pages/Contact/Contact";
-import "./styles/global.css"; // Import global CSS file
+import "./styles/global.css"; 
 
 function App() {
   const location = useLocation();

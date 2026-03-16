@@ -1,5 +1,6 @@
 import React from "react";
 import "./Project.css";
+import website_ok from "../../assets/images/website_ok.png";
 
 const Project = ({ title, imageSrc, description, link, date }) => {
   const backgroundStyle = {
@@ -9,7 +10,9 @@ const Project = ({ title, imageSrc, description, link, date }) => {
   };
 
   const navigateToLink = () => {
-    window.open(link, "_blank");
+    if (link) {
+      window.open(link, "_blank");
+    }
   };
 
   return (
@@ -23,8 +26,10 @@ const Project = ({ title, imageSrc, description, link, date }) => {
         <p className="project-description">{description}</p>
 
       </div>
-              <p className="project-date">{date}</p>
-
+              <p className="project-date">{date ? date : ""}</p>
+      {link && (
+        <img src={website_ok} alt="Website" className="website-ok-icon" />
+      )}
     </div>
   );
 };
